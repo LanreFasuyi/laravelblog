@@ -2,8 +2,9 @@
 
 @section('content')  
   <div class="row">
-    <h1>Create Post</h1>
-    <div class="col-8 col-md-auto ">
+    <div class="">
+        <h1>Create Post</h1>
+
       {!! Form::open(['action' => 'postsController@store', 'method'=>'POST']) !!}
       
         <div class="form-group">
