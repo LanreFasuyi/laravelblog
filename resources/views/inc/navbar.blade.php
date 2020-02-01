@@ -17,7 +17,7 @@
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="nav-item"><a class="nav-link" href="/posts/create">Create Post</a></li>
+        <li class="nav-item"><a class="nav-link" href="/posts">Blogs</a></li>
           <!-- Authentication Links -->
           @if (Auth::guest())
               <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
@@ -30,7 +30,7 @@
 
                   <ul class="dropdown-menu" role="menu">
                     <li ><a class="dropdown-item" href="/dashboard">Dashboard</a></li>
-                      <li>
+                    <li>
                           <a class="dropdown-item" href="{{ route('logout') }}"
                               onclick="event.preventDefault();
                                        document.getElementById('logout-form').submit();">

@@ -4,7 +4,7 @@
   <div class="row">
     <h1>Edit Post</h1>
     <div class="col-8 col-md-auto ">
-      {!! Form::open(['action' => ['postsController@update', $post->id ], 'method'=>'POST']) !!}
+      {!! Form::open(['action' => ['postsController@update', $post->id ], 'method'=>'POST', 'enctype' => 'multipart/form-data']) !!}
       
         <div class="form-group">
           {{Form::label('title', 'Title' )}}
@@ -14,6 +14,9 @@
         <div class="form-group">
           {{Form::label('body', 'Body' )}}
           {{Form::textarea('body', $post->body, ['id'=>'article-ckeditor','class'=>'form-control', 'placeholder'=>'Body Text'])}}
+        </div>
+        <div class="form-group">
+            {{Form::file('cover_image')}}
         </div>
     
         {{Form::hidden('_method', 'PUT')}}

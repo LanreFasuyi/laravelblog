@@ -2,9 +2,12 @@
 
 @section('content') 
 <a href="/posts" class="btn btn-default">Go Back</a>
-<h1>{{$post->title}}</h1>
+<h4>{{$post->title}}</h4>
 
 <hr>
+<div class="jumbotron">
+    <img  src="/storage/cover_images/{{$post->cover_image}}" alt="" style="width:auto; height: 50%">
+</div>
 <small>
   {{$post->created_at}}
 </small>
