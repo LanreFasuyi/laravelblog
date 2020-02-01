@@ -29,6 +29,7 @@
                   </a>
 
                   <ul class="dropdown-menu" role="menu">
+                    <li ><a class="dropdown-item" href="/dashboard">Dashboard</a></li>
                       <li>
                           <a class="dropdown-item" href="{{ route('logout') }}"
                               onclick="event.preventDefault();
